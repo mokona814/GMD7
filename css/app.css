@@ -1,0 +1,351 @@
+/* All CSS styles go here */
+/*UMN header starts here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color:black;
+  position: relative;
+  padding: 0px;
+}
+
+.container{
+  width:100%;
+  height:100%;
+}
+
+/* Mobile Styles */
+@media  screen and (max-width: 400px) {
+    
+    .container {
+      padding: 10px 12px 70px  12px;
+    }
+    .cdes_logo {
+      display: none;
+    }
+    .text_logo {
+      display: none;
+    }
+    .initial_logo {
+      width: 30%;
+    }
+    .menu {
+      display:inline-block;
+      float:right;
+      padding-top:5px;
+	
+    }
+	
+   .nav1{
+      display: none;
+      float: none;
+    }
+
+    .slick-prev, .slick-next{
+      visibility: hidden;
+    }
+
+
+
+  }
+
+
+
+/* Tablet Styles */
+@media  screen and (min-width: 401px) and (max-width: 1060px) {
+   
+    .container {
+      padding: 20px  45px 70px  45px;
+    }
+    .menu {
+		
+        display:block;
+        float:right;
+    }
+    .cdes_logo {
+      display: none;
+    }
+    .text_logo {
+      display: none;
+    }
+    .nav1 {
+      display: none;
+    }
+    .initial_logo {
+      display:block;
+    }
+    .slick-prev, .slick-next{
+      visibility: hidden;
+    }
+
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1061px) {
+    .container {
+      padding: 25px  100px 70px  100px;
+    }
+    .menu {
+      display: none;
+    }
+    .small_nav {
+     flex-direction: row;
+    }
+
+}
+/*Resoponsive Three Columns Styles*/
+@media screen and (max-width: 800px) {
+  .row .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.row .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+/* End of @media */
+
+/* Logos and Navigation Styles */
+.logos {
+  padding: 0;
+}
+
+.logos, a {
+  text-decoration: none;
+  }
+
+.initial_logo {
+  border-bottom: none;
+  width: 160px;
+  float: left;
+  padding: 0;
+  position:relative;
+	z-index: 2;
+}
+
+.cdes_logo {
+  border-bottom: none;
+  width: 230px;
+  float: right;
+  padding: 9px 0px 0 20px;
+
+}
+
+.text_logo {
+  border-bottom: none;
+  width: 370px;
+  float: left;
+  padding: 17px 10px 0 20px;
+}
+
+.h_menu {
+  border-bottom: none;
+  width: 45px;
+  padding: 0;
+}
+ 
+
+.nav1{
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.nav1 a {
+    display: inline-block;
+    margin: 15px 30px 0 5px;
+    text-decoration: none;
+    color:#8E8D8D;
+  }
+
+.nav1 a:hover {
+  color:#000;
+    }
+
+.nav2{
+      position: relative;
+
+      padding-top: 15px;
+      clear:both;
+    }
+
+.nav2 a {
+        display: inline-block;
+        margin: 15px 10px 0 5px;
+        text-decoration: none;
+        color:#8E8D8D;
+      }
+
+.nav2 a:hover {
+      color:#FF0000;
+        }
+
+.small_nav {
+  position:absolute;
+  clear:both;
+  top:80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background-color: #fff;
+   width:100%;
+   height:100%;
+   z-index: 1;
+  }
+
+  .small_nav a{
+  padding-top:10px;
+    }
+
+
+
+/*Image Slider*/
+.label_slide .slick-prev {
+	visibility: hidden;
+}
+
+.label_slide .slick-next {
+	visibility: hidden;
+}
+
+.autoplay{
+  position:relative;
+  display:block;
+  top: 30px;
+  justify-content: left;
+  clear:both;
+  width:100%;
+}
+.thumb img{
+  width: 100%;
+}
+
+.slick-prev, .slick-next{
+  background:#ffffff;
+  color:#9c9c9c;
+}
+
+.slick-prev:before,
+  .slick-next:before {
+    color: #9c9c9c;
+  }
+/*Resoponsive Three Columns*/
+.column {
+flex: 1;
+	margin: 5px 50px 15px 0;
+}
+
+.column:first-child { 
+	margin-left: 0 !important; 
+}
+.column:last-child {
+	margin-right: 0 !important; 
+}
+
+.row {
+width: 100%;
+display:flex;
+flex-flow: row wrap;
+justify-content: left;
+margin: 5px 0;
+position:relative;
+top:40px;
+
+}
+
+/*Text styles*/
+.text{
+  font-size: 16px;
+  width: 250px;
+    padding-top: 5px;
+    line-height:19px;
+}
+
+.title{
+  font-weight:bold;
+  font-size: 16px;
+  width: 250px;
+  padding-top: 15px;
+}
+
+.text2{
+  font-size: 15px;
+  width: 250px;
+    padding-top: 5px;
+    line-height:17px;
+}
+
+.title2{
+  font-weight:bold;
+  font-size: 14px;
+  width: 250px;
+  padding-top: 15px;
+}
+
+.section{
+  font-weight:bold;
+  font-size: 18px;
+  width: 250px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.week_object{
+width: 150px;
+padding-top: 10px;
+}
+
+.toggle_text{
+  font-size: 15px;
+  width: 250px;
+  padding-top: 5px;
+  line-height:19px;
+  display:none;
+
+}
+
+.toggle_title {cursor: pointer;
+  font-weight:bold;
+  font-size: 17px;
+  width: 250px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.show{
+width: 100%;
+height: auto;
+padding-top: 10px;
+
+}
+/*UMN footer*/
+.UMNfooter{
+	
+	position: relative;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: 5em;
+    border-style: inset;
+    border-width: 5px;
+
+}
